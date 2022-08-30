@@ -69,6 +69,18 @@ class BigQueryConnection
 
 
     /**
+     * Wrapper for dataset.
+     *
+     * @param string $dataset
+     * @param string|null $projectId
+     * @return \Google\Cloud\BigQuery\Dataset
+     */
+    public function dataset(string $dataset, string $projectId = null) {
+        return $this->client->dataset($dataset, $projectId);
+    }
+
+
+    /**
      * Run a BigQuery query in a synchronous way.
      * Note: This method is not recommended when you tried to pool a large quantity
      * of rows.
