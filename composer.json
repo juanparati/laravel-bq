@@ -1,0 +1,37 @@
+{
+    "name": "juanparati/laravel-bq",
+    "description": "A modern BigQuery connection manager for Laravel",
+    "type": "library",
+    "require": {
+        "php": "^8.0.2|^8.1",
+        "google/cloud-bigquery": "^1.23",
+        "illuminate/support": "^9.26",
+        "symfony/cache": "^6.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.7",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BigQueryManagerProvider"
+            ]
+        },
+        "aliases": {
+            "BigQuery": "BigQueryManagerFacade"
+        }
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Juanparati\\LaravelBQ\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juan Lago",
+            "email": "juanparati@gmail.com"
+        }
+    ]
+}
