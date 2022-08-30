@@ -6,7 +6,7 @@
         "php": "^8.0.2|^8.1",
         "google/cloud-bigquery": "^1.23",
         "illuminate/support": "^9.26",
-        "symfony/cache": "^6.1"
+        "symfony/cache": "^6.0"
     },
     "require-dev": {
         "orchestra/testbench": "^7.7",
