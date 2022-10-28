@@ -51,7 +51,7 @@ class BigQueryConnection
             $conf['keyFile'] = $credentials;
 
             if (!Str::startsWith($conf['private_key'], '-----BEGIN PRIVATE KEY'))
-                $conf['keyFile']['private_key'] = Crypt::decryptString($conf['keyFile']);
+                $conf['keyFile']['private_key'] = Crypt::decryptString($conf['keyFile']['private_key']);
         }
 
         $this->client = new BigQueryClient($conf);
