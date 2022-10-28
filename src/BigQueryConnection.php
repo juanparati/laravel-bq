@@ -50,7 +50,7 @@ class BigQueryConnection
         else {
             $conf['keyFile'] = $credentials;
 
-            if (!Str::startsWith($conf['private_key'], '-----BEGIN PRIVATE KEY'))
+            if (!Str::startsWith($conf['keyFile']['private_key'], '-----BEGIN PRIVATE KEY'))
                 $conf['keyFile']['private_key'] = Crypt::decryptString($conf['keyFile']['private_key']);
         }
 
