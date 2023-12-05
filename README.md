@@ -22,7 +22,7 @@ Facade registration (optional):
 
     'aliases' => [
         ...
-        'BQ' => \Juanparati\LaravelBQ\Facades\BigQueryManagerFacade,
+        'BQ' => \Juanparati\LaravelBQ\Facades\BigQueryManagerFacade::class,
         ...
     ]
 
