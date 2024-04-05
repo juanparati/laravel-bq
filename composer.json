@@ -2,6 +2,10 @@
     "name": "juanparati/laravel-bq",
     "description": "A modern BigQuery connection manager for Laravel",
     "type": "library",
+    "keywords": [
+        "BigQuery",
+        "Laravel"
+    ],
     "require": {
         "php": "^8.0",
         "google/cloud-bigquery": "^1.30",

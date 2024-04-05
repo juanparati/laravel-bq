@@ -40,3 +40,4 @@ Temporary Items
 
 .phpunit.result.cache
 /.phpunit.cache/
+/tests/.secrets/
