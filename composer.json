@@ -4,13 +4,13 @@
     "type": "library",
     "require": {
         "php": "^8.0",
-        "google/cloud-bigquery": "^1.23",
-        "illuminate/support": "^9.20|^10.0",
-        "symfony/cache": "^6.0"
+        "google/cloud-bigquery": "^1.30",
+        "illuminate/support": "^9.20|^10.0|^11.0",
+        "symfony/cache": "^6.4"
     },
     "require-dev": {
-        "orchestra/testbench": "^7.7",
-        "phpunit/phpunit": "^9.5"
+        "orchestra/testbench": ">=7.0",
+        "phpunit/phpunit": ">=9.5"
     },
     "extra": {
         "laravel": {
